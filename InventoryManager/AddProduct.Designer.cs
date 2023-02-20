@@ -93,6 +93,7 @@
             this.grpFood.TabIndex = 6;
             this.grpFood.TabStop = false;
             this.grpFood.Text = "Food Info";
+            this.grpFood.Visible = false;
             // 
             // txtCalories
             // 
@@ -131,6 +132,7 @@
             this.grpBook.TabIndex = 8;
             this.grpBook.TabStop = false;
             this.grpBook.Text = "Book Info";
+            this.grpBook.Visible = false;
             // 
             // txtISBN
             // 
