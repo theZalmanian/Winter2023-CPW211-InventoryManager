@@ -35,6 +35,7 @@
             this.grpFood = new System.Windows.Forms.GroupBox();
             this.txtCalories = new System.Windows.Forms.TextBox();
             this.txtAllergies = new System.Windows.Forms.TextBox();
+            this.btnAddProduct = new System.Windows.Forms.Button();
             this.grpProduct.SuspendLayout();
             this.grpFood.SuspendLayout();
             this.SuspendLayout();
@@ -107,11 +108,21 @@
             this.txtAllergies.TabIndex = 3;
             this.txtAllergies.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.Location = new System.Drawing.Point(23, 216);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(129, 23);
+            this.btnAddProduct.TabIndex = 7;
+            this.btnAddProduct.Text = "Add Product";
+            this.btnAddProduct.UseVisualStyleBackColor = true;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(178, 390);
+            this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.grpFood);
             this.Controls.Add(this.grpProduct);
             this.Name = "AddProduct";
@@ -132,5 +143,6 @@
         private GroupBox grpFood;
         private TextBox txtCalories;
         private TextBox txtAllergies;
+        private Button btnAddProduct;
     }
 }
