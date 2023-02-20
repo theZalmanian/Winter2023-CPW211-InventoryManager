@@ -12,9 +12,19 @@ namespace InventoryManager
 {
     public partial class AddProduct : Form
     {
-        public AddProduct()
+        public enum ProductTypes
+        {
+            Food, Book
+        }
+
+        public AddProduct(ProductTypes productType)
         {
             InitializeComponent();
+        }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
