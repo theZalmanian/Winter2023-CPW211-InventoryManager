@@ -62,6 +62,9 @@ namespace InventoryManager
 
         private void BtnAddProduct_Click(object sender, EventArgs e)
         {
+            // Setup connection to db
+            InheritanceContext dbContext = new();
+
             switch (_selectedType)
             {
                 // If the product type is food
@@ -75,6 +78,9 @@ namespace InventoryManager
                         Calories = Convert.ToInt32(txtCalories.Text),
                         Allergies = txtAllergies.Text
                     };
+
+                    // Prepare the insert for the food item
+                    dbContext.Products.Add(currFood);
                     break;
 
                 // If the product type is book
@@ -84,6 +90,9 @@ namespace InventoryManager
                 default:
                     break;
             }
+
+            // Push all queries to the db
+            dbContext.SaveChanges();
         }
     }
 }
