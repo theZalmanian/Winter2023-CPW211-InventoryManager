@@ -59,5 +59,34 @@ namespace InventoryManager
         {
 
         }
+
+        private void BtnAddProduct_Click(object sender, EventArgs e)
+        {
+            switch (_selectedType)
+            {
+                // If the product type is food
+                case ProductTypes.Food:
+                    // Create a food object using the given data
+                    Food currFood = new()
+                    {
+                        StockKeepingUnit = txtSKU.Text,
+                        Title = txtTitle.Text,
+                        Price = Convert.ToDouble(txtPrice.Text),
+                        Calories = Convert.ToInt32(txtCalories.Text),
+                    };
+
+                    // Add the given allergies to the list
+                    currFood.Allergies.Add(txtAllergies.Text);
+
+                    break;
+
+                // If the product type is book
+                case ProductTypes.Book:
+                    break;
+
+                default:
+                    break;
+            }
+        }
     }
 }

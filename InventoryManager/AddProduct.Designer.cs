@@ -121,6 +121,7 @@
             this.btnAddProduct.TabIndex = 7;
             this.btnAddProduct.Text = "Add Product";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.BtnAddProduct_Click);
             // 
             // grpBook
             // 
