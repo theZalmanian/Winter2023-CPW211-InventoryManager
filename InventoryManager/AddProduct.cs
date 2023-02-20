@@ -73,11 +73,8 @@ namespace InventoryManager
                         Title = txtTitle.Text,
                         Price = Convert.ToDouble(txtPrice.Text),
                         Calories = Convert.ToInt32(txtCalories.Text),
+                        Allergies = txtAllergies.Text
                     };
-
-                    // Add the given allergies to the list
-                    currFood.Allergies.Add(txtAllergies.Text);
-
                     break;
 
                 // If the product type is book
