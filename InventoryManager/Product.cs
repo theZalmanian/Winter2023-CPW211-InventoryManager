@@ -39,11 +39,13 @@ namespace InventoryManager
         /// <summary>
         /// The food item's calorie count
         /// </summary>
+        [Required]
         public int Calories { get; set; }
 
         /// <summary>
         /// A list of all allergy warnings
         /// </summary>
+        [Required]
         public List<string> Allergies { get; set; } = new List<string>();
     }
 
@@ -55,11 +57,13 @@ namespace InventoryManager
         /// <summary>
         /// The book's International Standard Book Number
         /// </summary>
+        [Required]
         public string ISBN { get; set; }
 
         /// <summary>
         /// The full name of the book's author
         /// </summary>
+        [Required]
         public string Author { get; set; }
     }
 }
