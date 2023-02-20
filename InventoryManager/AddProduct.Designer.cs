@@ -76,7 +76,7 @@
             this.grpProduct.Controls.Add(this.txtSKU);
             this.grpProduct.Controls.Add(this.txtPrice);
             this.grpProduct.Controls.Add(this.txtTitle);
-            this.grpProduct.Location = new System.Drawing.Point(25, 12);
+            this.grpProduct.Location = new System.Drawing.Point(39, 12);
             this.grpProduct.Name = "grpProduct";
             this.grpProduct.Size = new System.Drawing.Size(151, 110);
             this.grpProduct.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.grpFood.Controls.Add(this.txtCalories);
             this.grpFood.Controls.Add(this.txtAllergies);
-            this.grpFood.Location = new System.Drawing.Point(25, 157);
+            this.grpFood.Location = new System.Drawing.Point(39, 157);
             this.grpFood.Name = "grpFood";
             this.grpFood.Size = new System.Drawing.Size(151, 82);
             this.grpFood.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(36, 128);
+            this.btnAddProduct.Location = new System.Drawing.Point(50, 128);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(129, 23);
             this.btnAddProduct.TabIndex = 7;
@@ -126,7 +126,7 @@
             // 
             this.grpBook.Controls.Add(this.txtISBN);
             this.grpBook.Controls.Add(this.txtAuthor);
-            this.grpBook.Location = new System.Drawing.Point(25, 245);
+            this.grpBook.Location = new System.Drawing.Point(39, 245);
             this.grpBook.Name = "grpBook";
             this.grpBook.Size = new System.Drawing.Size(151, 82);
             this.grpBook.TabIndex = 8;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(202, 340);
+            this.ClientSize = new System.Drawing.Size(227, 340);
             this.Controls.Add(this.grpBook);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.grpFood);
