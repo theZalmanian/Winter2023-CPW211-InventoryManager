@@ -44,7 +44,7 @@ namespace InventoryManager
         /// <summary>
         /// A list of all allergy warnings
         /// </summary>
-        public List<string> Allergies { get; set; }
+        public List<string> Allergies { get; set; } = new List<string>();
     }
 
     /// <summary>
